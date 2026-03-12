@@ -128,33 +128,16 @@ body {
 .drop-menu a { padding:18px 25px; text-decoration:none; color:white; font-weight:1000; border-bottom:1px solid rgba(255,255,255,0.1); transition: all 0.25s ease; }
 .drop-menu a:hover { background: rgb(255,140,50); padding-left:30px; }
 
-/* Responsive tweaks */
-@media (max-width: 480px) {
-  .nav-logo img {
-    width: 45px;
-    height: 45px;
-  }
+@media (max-width: 768px) {
   .nav-center {
-    font-size: 14px;
+    font-size: 20px;   /* smaller text for tablets/phones */
+    max-width: 60%;     /* optional: prevent overlap with logo/hamburger */
   }
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .nav-logo {
-    margin-left: 10px;   /* push logo a bit right */
-  }
-
+@media (max-width: 480px) {
   .nav-center {
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;     /* shrink text if needed */
-    max-width: 60%;      /* prevent text from overlapping hamburger/logo */
-    text-align: center;
-  }
-
-  .hamburger {
-    margin-right: 10px;  /* optional: push hamburger slightly left */
+    font-size: 16px;   /* even smaller for very small phones */
   }
 }
 
