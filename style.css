@@ -11,7 +11,6 @@ body {
 }
 
 /* ===== LOADER ===== */
-/* ===== LOADER ===== */
 #loader {
   position: fixed;
   inset: 0;               /* top:0; left:0; right:0; bottom:0 */
@@ -138,6 +137,25 @@ body {
   .nav-logo img {
     width: 50px;
     height: 50px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .nav-logo {
+    margin-left: 10px;   /* push logo a bit right */
+  }
+
+  .nav-center {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;     /* shrink text if needed */
+    max-width: 60%;      /* prevent text from overlapping hamburger/logo */
+    text-align: center;
+  }
+
+  .hamburger {
+    margin-right: 10px;  /* optional: push hamburger slightly left */
   }
 }
 
