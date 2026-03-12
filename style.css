@@ -129,14 +129,13 @@ body {
 .drop-menu a:hover { background: rgb(255,140,50); padding-left:30px; }
 
 /* Responsive tweaks */
-@media (max-width: 768px) {
-  .nav-center {
-    font-size: 22px;
-  }
-
+@media (max-width: 480px) {
   .nav-logo img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+  }
+  .nav-center {
+    font-size: 18px;
   }
 }
 
